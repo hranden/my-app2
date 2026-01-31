@@ -44,6 +44,10 @@ pipeline {
                             # Show service info
                             echo "Service:"
                             kubectl get svc nginx-service -n nginx
+
+                            # Show Ingress
+                            echo "Ingress:"
+                            kubectl get ingress -n nginx
                         """
                     }
                 }

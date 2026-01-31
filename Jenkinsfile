@@ -32,6 +32,8 @@ pipeline {
                             
                             # Wait for rollout to complete
                             kubectl rollout status deployment/nginx-deployment -n nginx
+
+                            sleep 5
                             
                             # Show deployment status
                             echo "Deployment Status:"
